@@ -1,0 +1,1485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.Script.v1</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Apis.Script.v1.ScriptService">
+            <summary>The Script Service.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Apps Script API.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.MailGoogleCom">
+            <summary>Read, compose, send, and permanently delete all your email from Gmail</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.WwwGoogleComCalendarFeeds">
+            <summary>See, edit, share, and permanently delete all the calendars you can access using Google
+            Calendar</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.WwwGoogleComM8Feeds">
+            <summary>See, edit, download, and permanently delete your contacts</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.AdminDirectoryGroup">
+            <summary>View and manage the provisioning of groups on your domain</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.AdminDirectoryUser">
+            <summary>View and manage the provisioning of users on your domain</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.Documents">
+            <summary>View and manage your Google Docs documents</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.Drive">
+            <summary>See, edit, create, and delete all of your Google Drive files</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.Forms">
+            <summary>View and manage your forms in Google Drive</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.FormsCurrentonly">
+            <summary>View and manage forms that this application has been installed in</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.Groups">
+            <summary>View and manage your Google Groups</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptDeployments">
+            <summary>Create and update Google Apps Script deployments</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptDeploymentsReadonly">
+            <summary>View Google Apps Script deployments</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptMetrics">
+            <summary>View Google Apps Script project's metrics</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptProcesses">
+            <summary>View Google Apps Script processes</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptProjects">
+            <summary>Create and update Google Apps Script projects</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.ScriptProjectsReadonly">
+            <summary>View Google Apps Script projects</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.Spreadsheets">
+            <summary>See, edit, create, and delete your spreadsheets in Google Drive</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.Scope.UserinfoEmail">
+            <summary>View your email address</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptService.ScopeConstants">
+            <summary>Available OAuth 2.0 scope constants for use with the Apps Script API.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.MailGoogleCom">
+            <summary>Read, compose, send, and permanently delete all your email from Gmail</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.WwwGoogleComCalendarFeeds">
+            <summary>See, edit, share, and permanently delete all the calendars you can access using Google
+            Calendar</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.WwwGoogleComM8Feeds">
+            <summary>See, edit, download, and permanently delete your contacts</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.AdminDirectoryGroup">
+            <summary>View and manage the provisioning of groups on your domain</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.AdminDirectoryUser">
+            <summary>View and manage the provisioning of users on your domain</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.Documents">
+            <summary>View and manage your Google Docs documents</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.Drive">
+            <summary>See, edit, create, and delete all of your Google Drive files</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.Forms">
+            <summary>View and manage your forms in Google Drive</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.FormsCurrentonly">
+            <summary>View and manage forms that this application has been installed in</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.Groups">
+            <summary>View and manage your Google Groups</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptDeployments">
+            <summary>Create and update Google Apps Script deployments</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptDeploymentsReadonly">
+            <summary>View Google Apps Script deployments</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptMetrics">
+            <summary>View Google Apps Script project's metrics</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptProcesses">
+            <summary>View Google Apps Script processes</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptProjects">
+            <summary>Create and update Google Apps Script projects</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.ScriptProjectsReadonly">
+            <summary>View Google Apps Script projects</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.Spreadsheets">
+            <summary>See, edit, create, and delete your spreadsheets in Google Drive</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptService.ScopeConstants.UserinfoEmail">
+            <summary>View your email address</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.Processes">
+            <summary>Gets the Processes resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.Projects">
+            <summary>Gets the Projects resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptService.Scripts">
+            <summary>Gets the Scripts resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptBaseServiceRequest`1">
+            <summary>A base abstract class for Script requests.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new ScriptBaseServiceRequest instance.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.Xgafv">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.XgafvEnum">
+            <summary>V1 error format.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.XgafvEnum.Value1">
+            <summary>v1 error format</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.XgafvEnum.Value2">
+            <summary>v2 error format</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.AccessToken">
+            <summary>OAuth access token.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.Alt">
+            <summary>Data format for response.</summary>
+            [default: json]
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.AltEnum">
+            <summary>Data format for response.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.AltEnum.Media">
+            <summary>Media download with context-dependent Content-Type</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.AltEnum.Proto">
+            <summary>Responses with Content-Type of application/x-protobuf</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.Callback">
+            <summary>JSONP</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.UploadType">
+            <summary>Legacy upload protocol for media (e.g. "media", "multipart").</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.UploadProtocol">
+            <summary>Upload protocol for media (e.g. "raw", "multipart").</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptBaseServiceRequest`1.InitParameters">
+            <summary>Initializes Script parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource">
+            <summary>The "processes" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ProcessesResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.List">
+            <summary>List information about processes made by or on behalf of a user, such as process type and current
+            status.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListRequest">
+            <summary>List information about processes made by or on behalf of a user, such as process type and current
+            status.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.ListRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.PageSize">
+            <summary>The maximum number of returned processes per page of results. Defaults to 50.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.PageToken">
+            <summary>The token for continuing a previous list request on the next page. This should be set to the
+            value of `nextPageToken` from a previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterDeploymentId">
+            <summary>Optional field used to limit returned processes to those originating from projects with a
+            specific deployment ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterEndTime">
+            <summary>Optional field used to limit returned processes to those that completed on or before the given
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterFunctionName">
+            <summary>Optional field used to limit returned processes to those originating from a script function
+            with the given function name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterProjectName">
+            <summary>Optional field used to limit returned processes to those originating from projects with project
+            names containing a specific string.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterScriptId">
+            <summary>Optional field used to limit returned processes to those originating from projects with a
+            specific script ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterStartTime">
+            <summary>Optional field used to limit returned processes to those that were started on or after the
+            given timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterStatuses">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            statuses.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterStatusesEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            statuses.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterTypes">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            types.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterTypesEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            types.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterUserAccessLevels">
+            <summary>Optional field used to limit returned processes to those having one of the specified user
+            access levels.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListRequest.UserProcessFilterUserAccessLevelsEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified user
+            access levels.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.ListScriptProcesses">
+            <summary>List information about a script's executed processes, such as process type and current
+            status.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest">
+            <summary>List information about a script's executed processes, such as process type and current
+            status.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new ListScriptProcesses request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.PageSize">
+            <summary>The maximum number of returned processes per page of results. Defaults to 50.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.PageToken">
+            <summary>The token for continuing a previous list request on the next page. This should be set to the
+            value of `nextPageToken` from a previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptId">
+            <summary>The script ID of the project whose processes are listed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterDeploymentId">
+            <summary>Optional field used to limit returned processes to those originating from projects with a
+            specific deployment ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterEndTime">
+            <summary>Optional field used to limit returned processes to those that completed on or before the given
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterFunctionName">
+            <summary>Optional field used to limit returned processes to those originating from a script function
+            with the given function name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterStartTime">
+            <summary>Optional field used to limit returned processes to those that were started on or after the
+            given timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterStatuses">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            statuses.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterStatusesEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            statuses.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterTypes">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            types.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterTypesEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified process
+            types.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterUserAccessLevels">
+            <summary>Optional field used to limit returned processes to those having one of the specified user
+            access levels.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.ScriptProcessFilterUserAccessLevelsEnum">
+            <summary>Optional field used to limit returned processes to those having one of the specified user
+            access levels.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProcessesResource.ListScriptProcessesRequest.InitParameters">
+            <summary>Initializes ListScriptProcesses parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource">
+            <summary>The "projects" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ProjectsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.Deployments">
+            <summary>Gets the Deployments resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource">
+            <summary>The "deployments" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.Create(Google.Apis.Script.v1.Data.DeploymentConfig,System.String)">
+            <summary>Creates a deployment of an Apps Script project.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest">
+            <summary>Creates a deployment of an Apps Script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.DeploymentConfig,System.String)">
+            <summary>Constructs a new Create request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.CreateRequest.InitParameters">
+            <summary>Initializes Create parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.Delete(System.String,System.String)">
+            <summary>Deletes a deployment of an Apps Script project.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+            <param name="deploymentId">The deployment ID
+            to be undeployed.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest">
+            <summary>Deletes a deployment of an Apps Script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.DeploymentId">
+            <summary>The deployment ID to be undeployed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.Get(System.String,System.String)">
+            <summary>Gets a deployment of an Apps Script project.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+            <param name="deploymentId">The deployment
+            ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest">
+            <summary>Gets a deployment of an Apps Script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.DeploymentId">
+            <summary>The deployment ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.List(System.String)">
+            <summary>Lists the deployments of an Apps Script project.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest">
+            <summary>Lists the deployments of an Apps Script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.PageSize">
+            <summary>The maximum number of deployments on each returned page. Defaults to 50.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.PageToken">
+            <summary>The token for continuing a previous list request on the next page. This should be set to
+            the value of `nextPageToken` from a previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.Update(Google.Apis.Script.v1.Data.UpdateDeploymentRequest,System.String,System.String)">
+            <summary>Updates a deployment of an Apps Script project.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="scriptId">The script project's Drive ID.</param>
+            <param name="deploymentId">The deployment ID
+            for this deployment.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest">
+            <summary>Updates a deployment of an Apps Script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.UpdateDeploymentRequest,System.String,System.String)">
+            <summary>Constructs a new Update request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.DeploymentId">
+            <summary>The deployment ID for this deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.DeploymentsResource.UpdateRequest.InitParameters">
+            <summary>Initializes Update parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.Versions">
+            <summary>Gets the Versions resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.VersionsResource">
+            <summary>The "versions" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ProjectsResource.VersionsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.Create(Google.Apis.Script.v1.Data.Version,System.String)">
+            <summary>Creates a new immutable version using the current code, with a unique version number.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest">
+            <summary>Creates a new immutable version using the current code, with a unique version number.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.Version,System.String)">
+            <summary>Constructs a new Create request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.CreateRequest.InitParameters">
+            <summary>Initializes Create parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.Get(System.String,System.Int32)">
+            <summary>Gets a version of a script project.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+            <param name="versionNumber">The version
+            number.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest">
+            <summary>Gets a version of a script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.Int32)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.VersionNumber">
+            <summary>The version number.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.List(System.String)">
+            <summary>List the versions of a script project.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest">
+            <summary>List the versions of a script project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.PageSize">
+            <summary>The maximum number of versions on each returned page. Defaults to 50.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.PageToken">
+            <summary>The token for continuing a previous list request on the next page. This should be set to
+            the value of `nextPageToken` from a previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.VersionsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.Create(Google.Apis.Script.v1.Data.CreateProjectRequest)">
+            <summary>Creates a new, empty script project with no script files and a base manifest file.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.CreateRequest">
+            <summary>Creates a new, empty script project with no script files and a base manifest file.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.CreateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.CreateProjectRequest)">
+            <summary>Constructs a new Create request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.CreateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.CreateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.CreateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.CreateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.CreateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.CreateRequest.InitParameters">
+            <summary>Initializes Create parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.Get(System.String)">
+            <summary>Gets a script project's metadata.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.GetRequest">
+            <summary>Gets a script project's metadata.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetContent(System.String)">
+            <summary>Gets the content of the script project, including the code source and metadata for each script
+            file.</summary>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.GetContentRequest">
+            <summary>Gets the content of the script project, including the code source and metadata for each script
+            file.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new GetContent request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.VersionNumber">
+            <summary>The version number of the project to retrieve. If not provided, the project's HEAD version is
+            returned.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetContentRequest.InitParameters">
+            <summary>Initializes GetContent parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetMetrics(System.String)">
+            <summary>Get metrics data for scripts, such as number of executions and active users.</summary>
+            <param name="scriptId">Required field indicating the script to get metrics for.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest">
+            <summary>Get metrics data for scripts, such as number of executions and active users.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new GetMetrics request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.ScriptId">
+            <summary>Required field indicating the script to get metrics for.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.MetricsFilterDeploymentId">
+            <summary>Optional field indicating a specific deployment to retrieve metrics from.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.MetricsGranularity">
+            <summary>Required field indicating what granularity of metrics are returned.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.MetricsGranularityEnum">
+            <summary>Required field indicating what granularity of metrics are returned.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.GetMetricsRequest.InitParameters">
+            <summary>Initializes GetMetrics parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.UpdateContent(Google.Apis.Script.v1.Data.Content,System.String)">
+            <summary>Updates the content of the specified script project. This content is stored as the HEAD version,
+            and is used when the script is executed as a trigger, in the script editor, in add-on preview mode, or as a
+            web app or Apps Script API in development mode. This clears all the existing files in the project.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="scriptId">The script project's Drive ID.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest">
+            <summary>Updates the content of the specified script project. This content is stored as the HEAD version,
+            and is used when the script is executed as a trigger, in the script editor, in add-on preview mode, or as a
+            web app or Apps Script API in development mode. This clears all the existing files in the project.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.Content,System.String)">
+            <summary>Constructs a new UpdateContent request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ProjectsResource.UpdateContentRequest.InitParameters">
+            <summary>Initializes UpdateContent parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptsResource">
+            <summary>The "scripts" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Script.v1.ScriptsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptsResource.Run(Google.Apis.Script.v1.Data.ExecutionRequest,System.String)">
+             <summary>Runs a function in an Apps Script project. The script project must be deployed for use with the
+             Apps Script API and the calling application must share the same Cloud Platform project.
+            
+             This method requires authorization with an OAuth 2.0 token that includes at least one of the scopes listed
+             in the [Authorization](#authorization-scopes) section; script projects that do not require authorization
+             cannot be executed through this API. To find the correct scopes to include in the authentication token, open
+             the project in the script editor, then select **File > Project properties** and click the **Scopes** tab.
+            
+             The error `403, PERMISSION_DENIED: The caller does not have permission` indicates that the Cloud Platform
+             project used to authorize the request is not the same as the one used by the script.</summary>
+             <param name="body">The body of the request.</param>
+             <param name="scriptId">The script ID of the script to be executed. To find the script ID, open the project in the
+             script editor and select **File > Project properties**.</param>
+        </member>
+        <member name="T:Google.Apis.Script.v1.ScriptsResource.RunRequest">
+             <summary>Runs a function in an Apps Script project. The script project must be deployed for use with the
+             Apps Script API and the calling application must share the same Cloud Platform project.
+            
+             This method requires authorization with an OAuth 2.0 token that includes at least one of the scopes listed
+             in the [Authorization](#authorization-scopes) section; script projects that do not require authorization
+             cannot be executed through this API. To find the correct scopes to include in the authentication token, open
+             the project in the script editor, then select **File > Project properties** and click the **Scopes** tab.
+            
+             The error `403, PERMISSION_DENIED: The caller does not have permission` indicates that the Cloud Platform
+             project used to authorize the request is not the same as the one used by the script.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptsResource.RunRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Script.v1.Data.ExecutionRequest,System.String)">
+            <summary>Constructs a new Run request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptsResource.RunRequest.ScriptId">
+            <summary>The script ID of the script to be executed. To find the script ID, open the project in the
+            script editor and select **File > Project properties**.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptsResource.RunRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptsResource.RunRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptsResource.RunRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptsResource.RunRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.ScriptsResource.RunRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Script.v1.ScriptsResource.RunRequest.InitParameters">
+            <summary>Initializes Run parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Content">
+            <summary>The Content resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Content.Files">
+            <summary>The list of script project files. One of the files is a script manifest; it must be named
+            "appsscript", must have type of JSON, and include the manifest configurations for the project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Content.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Content.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.CreateProjectRequest">
+            <summary>Request to create a script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.CreateProjectRequest.ParentId">
+            <summary>The Drive ID of a parent file that the created script project is bound to. This is usually the ID
+            of a Google Doc, Google Sheet, Google Form, or Google Slides file. If not set, a standalone script project
+            is created.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.CreateProjectRequest.Title">
+            <summary>The title for the project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.CreateProjectRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Deployment">
+            <summary>Representation of a single script deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Deployment.DeploymentConfig">
+            <summary>The deployment configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Deployment.DeploymentId">
+            <summary>The deployment ID for this deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Deployment.EntryPoints">
+            <summary>The deployment's entry points.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Deployment.UpdateTime">
+            <summary>Last modified date time stamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Deployment.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.DeploymentConfig">
+            <summary>Metadata the defines how a deployment is configured.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.DeploymentConfig.Description">
+            <summary>The description for this deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.DeploymentConfig.ManifestFileName">
+            <summary>The manifest file name for this deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.DeploymentConfig.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.DeploymentConfig.VersionNumber">
+            <summary>The version number on which this deployment is based.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.DeploymentConfig.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Empty">
+             <summary>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A
+             typical example is to use it as the request or the response type of an API method. For instance:
+            
+             service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); }
+            
+             The JSON representation for `Empty` is empty JSON object `{}`.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Empty.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.EntryPoint">
+            <summary>A configuration that defines how a deployment is accessed externally.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.EntryPoint.AddOn">
+            <summary>Add-on properties.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.EntryPoint.EntryPointType">
+            <summary>The type of the entry point.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.EntryPoint.ExecutionApi">
+            <summary>An entry point specification for Apps Script API execution calls.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.EntryPoint.WebApp">
+            <summary>An entry point specification for web apps.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.EntryPoint.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ExecuteStreamResponse">
+            <summary>The response for executing or debugging a function in an Apps Script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecuteStreamResponse.Result">
+            <summary>The result of the execution. TODO (johnlattin): Add debugging and logging.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecuteStreamResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ExecutionError">
+            <summary>An object that provides information about the nature of an error resulting from an attempted execution
+            of a script function using the Apps Script API. If a run call succeeds but the script function (or Apps Script
+            itself) throws an exception, the response body's error field contains a Status object. The `Status` object's
+            `details` field contains an array with a single one of these `ExecutionError` objects.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionError.ErrorMessage">
+            <summary>The error message thrown by Apps Script, usually localized into the user's language.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionError.ErrorType">
+            <summary>The error type, for example `TypeError` or `ReferenceError`. If the error type is unavailable, this
+            field is not included.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionError.ScriptStackTraceElements">
+            <summary>An array of objects that provide a stack trace through the script to show where the execution
+            failed, with the deepest call first.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionError.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ExecutionRequest">
+            <summary>A request to run the function in a script. The script is identified by the specified `script_id`.
+            Executing a function on a script returns results based on the implementation of the script.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionRequest.DevMode">
+            <summary>If `true` and the user is an owner of the script, the script runs at the most recently saved
+            version rather than the version deployed for use with the Apps Script API. Optional; default is
+            `false`.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionRequest.Function">
+            <summary>The name of the function to execute in the given script. The name does not include parentheses or
+            parameters. It can reference a function in an included library such as `Library.libFunction1`.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionRequest.Parameters">
+            <summary>The parameters to be passed to the function being executed. The object type for each parameter
+            should match the expected type in Apps Script. Parameters cannot be Apps Script-specific object types (such
+            as a `Document` or a `Calendar`); they can only be primitive types such as `string`, `number`, `array`,
+            `object`, or `boolean`. Optional.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionRequest.SessionState">
+            <summary>Deprecated. For use with Android add-ons only. An ID that represents the user's current session in
+            the Android app for Google Docs or Sheets, included as extra data in the
+            [Intent](https://developer.android.com/guide/components/intents-filters.html) that launches the add-on. When
+            an Android add-on is run with a session state, it gains the privileges of a
+            [bound](https://developers.google.com/apps-script/guides/bound) scriptthat is, it can access information
+            like the user's current cursor position (in Docs) or selected cell (in Sheets). To retrieve the state, call
+            `Intent.getStringExtra("com.google.android.apps.docs.addons.SessionState")`. Optional.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ExecutionResponse">
+            <summary>An object that provides the return value of a function executed using the Apps Script API. If the
+            script function returns successfully, the response body's response field contains this `ExecutionResponse`
+            object.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionResponse.Result">
+            <summary>The return value of the script function. The type matches the object type returned in Apps Script.
+            Functions called using the Apps Script API cannot return Apps Script-specific objects (such as a `Document`
+            or a `Calendar`); they can only return primitive types such as a `string`, `number`, `array`, `object`, or
+            `boolean`.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ExecutionResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.File">
+            <summary>An individual file within a script project. A file is a third-party source code created by one or more
+            developers. It can be a server-side JS code, HTML, or a configuration file. Each script project can contain
+            multiple files.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.CreateTime">
+            <summary>Creation date timestamp. This read-only field is only visible to users who have WRITER permission
+            for the script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.FunctionSet">
+            <summary>The defined set of functions in the script file, if any.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.LastModifyUser">
+            <summary>The user who modified the file most recently. This read-only field is only visible to users who
+            have WRITER permission for the script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.Name">
+            <summary>The name of the file. The file extension is not part of the file name, which can be identified from
+            the type field.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.Source">
+            <summary>The file content.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.Type">
+            <summary>The type of the file.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.UpdateTime">
+            <summary>Last modified date timestamp. This read-only field is only visible to users who have WRITER
+            permission for the script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.File.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint">
+            <summary>An add-on entry point.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.AddOnType">
+            <summary>The add-on's required list of supported container types.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.Description">
+            <summary>The add-on's optional description.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.HelpUrl">
+            <summary>The add-on's optional help URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.PostInstallTipUrl">
+            <summary>The add-on's required post install tip URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.ReportIssueUrl">
+            <summary>The add-on's optional report issue URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.Title">
+            <summary>The add-on's required title.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeAddOnEntryPoint.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiConfig">
+            <summary>API executable entry point configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiConfig.Access">
+            <summary>Who has permission to run the API executable.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiConfig.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiEntryPoint">
+            <summary>An API executable entry point.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiEntryPoint.EntryPointConfig">
+            <summary>The entry point's configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeExecutionApiEntryPoint.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunction">
+            <summary>Represents a function in a script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunction.Name">
+            <summary>The function name in the script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunction.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunctionSet">
+            <summary>A set of functions. No duplicates are permitted.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunctionSet.Values">
+            <summary>A list of functions composing the set.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeFunctionSet.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess">
+            <summary>Representation of a single script process execution that was started from the script editor, a trigger,
+            an application, or using the Apps Script API. This is distinct from the `Operation` resource, which only
+            represents executions started via the Apps Script API.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.Duration">
+            <summary>Duration the execution spent executing.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.FunctionName">
+            <summary>Name of the function the started the execution.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.ProcessStatus">
+            <summary>The executions status.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.ProcessType">
+            <summary>The executions type.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.ProjectName">
+            <summary>Name of the script being executed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.StartTime">
+            <summary>Time the execution started.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.UserAccessLevel">
+            <summary>The executing users access level to the script.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeProcess.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser">
+            <summary>A simple user profile resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser.Domain">
+            <summary>The user's domain.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser.Email">
+            <summary>The user's identifying email address.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser.Name">
+            <summary>The user's display name.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser.PhotoUrl">
+            <summary>The user's photo.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeUser.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppConfig">
+            <summary>Web app entry point configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppConfig.Access">
+            <summary>Who has permission to run the web app.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppConfig.ExecuteAs">
+            <summary>Who to execute the web app as.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppConfig.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppEntryPoint">
+            <summary>A web application entry point.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppEntryPoint.EntryPointConfig">
+            <summary>The entry point's configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppEntryPoint.Url">
+            <summary>The URL for the web application.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.GoogleAppsScriptTypeWebAppEntryPoint.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ListDeploymentsResponse">
+            <summary>Response with the list of deployments for the specified Apps Script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListDeploymentsResponse.Deployments">
+            <summary>The list of deployments.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListDeploymentsResponse.NextPageToken">
+            <summary>The token that can be used in the next call to get the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListDeploymentsResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ListScriptProcessesResponse">
+            <summary>Response with the list of Process resources.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListScriptProcessesResponse.NextPageToken">
+            <summary>Token for the next page of results. If empty, there are no more pages remaining.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListScriptProcessesResponse.Processes">
+            <summary>List of processes matching request parameters.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListScriptProcessesResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ListUserProcessesResponse">
+            <summary>Response with the list of Process resources.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListUserProcessesResponse.NextPageToken">
+            <summary>Token for the next page of results. If empty, there are no more pages remaining.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListUserProcessesResponse.Processes">
+            <summary>List of processes matching request parameters.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListUserProcessesResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ListValue">
+            <summary>`ListValue` is a wrapper around a repeated field of values. Based on LustValue at:
+            google3/apps/maestro/api/struct.proto?q=message%5c%20ListValue</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListValue.Values">
+            <summary>Repeated field of dynamically typed values.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListValue.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ListVersionsResponse">
+            <summary>Response with the list of the versions for the specified script project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListVersionsResponse.NextPageToken">
+            <summary>The token use to fetch the next page of records. if not exist in the response, that means no more
+            versions to list.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListVersionsResponse.Versions">
+            <summary>The list of versions.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ListVersionsResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Metrics">
+            <summary>Resource containing usage stats for a given script, based on the supplied filter and mask present in
+            the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Metrics.ActiveUsers">
+            <summary>Number of active users.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Metrics.FailedExecutions">
+            <summary>Number of failed executions.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Metrics.TotalExecutions">
+            <summary>Number of total executions.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Metrics.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.MetricsValue">
+            <summary>Metrics value that holds number of executions counted.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.MetricsValue.EndTime">
+            <summary>Required field indicating the end time of the interval.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.MetricsValue.StartTime">
+            <summary>Required field indicating the start time of the interval.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.MetricsValue.Value">
+            <summary>Indicates the number of executions counted.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.MetricsValue.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Operation">
+            <summary>A representation of an execution of an Apps Script function started with run. The execution response
+            does not arrive until the function finishes executing. The maximum execution runtime is listed in the [Apps
+            Script quotas guide](/apps-script/guides/services/quotas#current_limitations). After execution has started, it
+            can have one of four outcomes:   If the script function returns successfully, the response field contains an
+            ExecutionResponse object with the function's return value in the object's `result` field. If the script function
+            (or Apps Script itself) throws an exception, the error field contains a Status object. The `Status` object's
+            `details` field contains an array with a single ExecutionError object that provides information about the nature
+            of the error. If the execution has not yet completed, the done field is `false` and the neither the `response`
+            nor `error` fields are present. If the `run` call itself fails (for example, because of a malformed request or
+            an authorization error), the method returns an HTTP response code in the 4XX range with a different format for
+            the response body. Client libraries automatically convert a 4XX response into an exception class. </summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Operation.Done">
+            <summary>This field indicates whether the script execution has completed. A completed execution has a
+            populated `response` field containing the ExecutionResponse from function that was executed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Operation.Error">
+            <summary>If a `run` call succeeds but the script function (or Apps Script itself) throws an exception, this
+            field contains a Status object. The `Status` object's `details` field contains an array with a single
+            ExecutionError object that provides information about the nature of the error.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Operation.Response">
+            <summary>If the script function returns successfully, this field contains an ExecutionResponse object with
+            the function's return value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Operation.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Project">
+            <summary>The script project resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.CreateTime">
+            <summary>When the script was created.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.Creator">
+            <summary>User who originally created the script.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.LastModifyUser">
+            <summary>User who last modified the script.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.ParentId">
+            <summary>The parent's Drive ID that the script will be attached to. This is usually the ID of a Google
+            Document or Google Sheet. This filed is optional, and if not set, a stand-alone script will be
+            created.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.Title">
+            <summary>The title for the project.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.UpdateTime">
+            <summary>When the script was last updated.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Project.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ScriptExecutionResult">
+            <summary>The result of an execution Based on ScriptExecutionResult at:
+            google3/apps/maestro/api/frontend_execution_common.proto?q=message%5c%20ScriptExecutionResult</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ScriptExecutionResult.ReturnValue">
+            <summary>The returned value of the execution. TODO (johnlattin): Add HtmlResponse TODO (johnlattin): Add
+            ExceptionResponse TODO (johlnattin): Add TextResponse</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ScriptExecutionResult.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.ScriptStackTraceElement">
+            <summary>A stack trace through the script that shows where the execution failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ScriptStackTraceElement.Function">
+            <summary>The name of the function that failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ScriptStackTraceElement.LineNumber">
+            <summary>The line number where the script failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.ScriptStackTraceElement.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Status">
+            <summary>If a `run` call succeeds but the script function (or Apps Script itself) throws an exception, the
+            response body's error field contains this `Status` object.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Status.Code">
+            <summary>The status code. For this API, this value either:   10, indicating a `SCRIPT_TIMEOUT` error,  3,
+            indicating an `INVALID_ARGUMENT` error, or  1, indicating a `CANCELLED` execution. </summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Status.Details">
+            <summary>An array that contains a single ExecutionError object that provides information about the nature of
+            the error.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Status.Message">
+            <summary>A developer-facing error message, which is in English. Any user-facing error message is localized
+            and sent in the details field, or localized by the client.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Status.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Struct">
+            <summary>`Struct` represents a structured data value, consisting of fields which map to dynamically typed
+            values. Based on Struct at: google3/apps/maestro/api/struct.proto?q=message%5c%20Struct</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Struct.Fields">
+            <summary>Unordered map of dynamically typed values.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Struct.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.UpdateDeploymentRequest">
+            <summary>Request with deployment information to update an existing deployment.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.UpdateDeploymentRequest.DeploymentConfig">
+            <summary>The deployment configuration.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.UpdateDeploymentRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Value">
+            <summary>`Value` represents a dynamically typed value which is the outcome of an executed script Based on Value
+            at: google3/apps/maestro/api/struct.proto?q=message%5c%20Value</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.BoolValue">
+            <summary>Represents a boolean value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.BytesValue">
+            <summary>Represents raw byte values.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.DateValue">
+            <summary>Represents a date in ms since the epoch.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.ListValue">
+            <summary>Represents a repeated `Value`.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.NullValue">
+            <summary>Represents a null value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.NumberValue">
+            <summary>Represents a double value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.ProtoValue">
+            <summary>Represents a structured proto value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.StringValue">
+            <summary>Represents a string value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.StructValue">
+            <summary>Represents a structured value.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Value.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Script.v1.Data.Version">
+            <summary>A resource representing a script project version. A version is a "snapshot" of a script project and is
+            similar to a read-only branched release. When creating deployments, the version to use must be
+            specified.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Version.CreateTime">
+            <summary>When the version was created.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Version.Description">
+            <summary>The description for this version.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Version.ScriptId">
+            <summary>The script project's Drive ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Version.VersionNumber">
+            <summary>The incremental ID that is created by Apps Script when a version is created. This is system
+            assigned number and is immutable once created.</summary>
+        </member>
+        <member name="P:Google.Apis.Script.v1.Data.Version.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+    </members>
+</doc>
